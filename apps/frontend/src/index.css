@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@300;400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #0a0a0f;
+    color: #ffffff;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  /* Hide scrollbar for Chrome, Safari */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge */
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  /* Bottom navigation safe area */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Skeleton loading shimmer */
+  .skeleton {
+    background: linear-gradient(90deg, #1a1a25 25%, #252535 50%, #1a1a25 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Gold accent button */
+  .btn-gold {
+    @apply bg-gold text-black font-semibold rounded-xl px-6 py-3 
+           active:scale-95 transition-transform duration-100
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* Movie card hover */
+  .movie-card {
+    @apply bg-cinema-card rounded-xl overflow-hidden 
+           active:scale-95 transition-transform duration-100;
+  }
+
+  /* Glass panel */
+  .glass-panel {
+    background: rgba(18, 18, 26, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Bottom nav item */
+  .nav-item {
+    @apply flex flex-col items-center gap-1 py-2 px-3 
+           transition-colors duration-200;
+  }
+
+  /* Gold gradient text */
+  .text-gold-gradient {
+    background: linear-gradient(135deg, #d4af37 0%, #f0d060 50%, #d4af37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Cinematic hero gradient */
+  .hero-gradient {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(10, 10, 15, 0.6) 40%,
+      rgba(10, 10, 15, 0.95) 80%,
+      #0a0a0f 100%
+    );
+  }
+}
+
+/* Video.js custom skin */
+.vjs-cinema-skin .vjs-control-bar {
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  height: 4rem;
+}
+
+.vjs-cinema-skin .vjs-play-progress {
+  background: #d4af37;
+}
+
+.vjs-cinema-skin .vjs-volume-level {
+  background: #d4af37;
+}
+
+/* Telegram viewport fix */
+html {
+  height: 100%;
+  height: -webkit-fill-available;
+}

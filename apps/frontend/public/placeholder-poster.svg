@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
+  <rect width="300" height="450" fill="#12121a"/>
+  <rect x="1" y="1" width="298" height="448" fill="none" stroke="#2a2a3a" stroke-width="2" rx="8"/>
+  <!-- Film strip decoration top -->
+  <rect x="0" y="0" width="300" height="32" fill="#1a1a26"/>
+  <rect x="8" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="36" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="64" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="92" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="188" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="216" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="244" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="272" y="8" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <!-- Film strip decoration bottom -->
+  <rect x="0" y="418" width="300" height="32" fill="#1a1a26"/>
+  <rect x="8" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="36" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="64" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="92" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="188" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="216" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="244" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <rect x="272" y="426" width="20" height="16" rx="2" fill="#0a0a0f"/>
+  <!-- Center play icon -->
+  <circle cx="150" cy="225" r="52" fill="none" stroke="#d4af37" stroke-width="2" opacity="0.4"/>
+  <circle cx="150" cy="225" r="44" fill="#d4af3720"/>
+  <polygon points="138,204 138,246 174,225" fill="#d4af37" opacity="0.7"/>
+  <!-- Label -->
+  <text x="150" y="300" font-family="sans-serif" font-size="13" fill="#555570" text-anchor="middle">រូបភាពមិនមាន</text>
+  <text x="150" y="318" font-family="sans-serif" font-size="11" fill="#3a3a50" text-anchor="middle">No Image</text>
+</svg>

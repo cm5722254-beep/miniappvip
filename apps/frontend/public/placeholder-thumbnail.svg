@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270">
+  <rect width="480" height="270" fill="#12121a"/>
+  <rect x="1" y="1" width="478" height="268" fill="none" stroke="#2a2a3a" stroke-width="2" rx="6"/>
+  <!-- Scanlines effect -->
+  <rect x="0" y="0" width="480" height="270" fill="url(#scan)" opacity="0.05"/>
+  <defs>
+    <pattern id="scan" width="2" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#ffffff"/>
+    </pattern>
+  </defs>
+  <!-- Center play -->
+  <circle cx="240" cy="135" r="44" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="240" cy="135" r="36" fill="#d4af3718"/>
+  <polygon points="230,118 230,152 258,135" fill="#d4af37" opacity="0.6"/>
+  <!-- Label -->
+  <text x="240" y="198" font-family="sans-serif" font-size="12" fill="#555570" text-anchor="middle">No Thumbnail</text>
+</svg>
