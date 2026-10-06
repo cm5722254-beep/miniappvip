@@ -75,9 +75,10 @@ export function clamp(value: number, min: number, max: number): number {
 }
 
 /** Debounce function */
-export function debounce<T extends (...args: unknown[]) => void>(fn: T, delay: number): T {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function debounce<T extends (...args: any[]) => void>(fn: T, delay: number): T {
   let timeout: ReturnType<typeof setTimeout>;
-  return ((...args: unknown[]) => {
+  return ((...args: Parameters<T>) => {
     clearTimeout(timeout);
     timeout = setTimeout(() => fn(...args), delay);
   }) as T;

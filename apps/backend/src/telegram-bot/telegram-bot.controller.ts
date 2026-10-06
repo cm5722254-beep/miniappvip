@@ -9,7 +9,7 @@ import {
   UnauthorizedException,
 } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { TelegramBotService, TgUpdate } from './telegram-bot.service';
+import { TelegramBotService, TgUpdate, TgUser } from './telegram-bot.service';
 import { UsersService } from '../users/users.service';
 
 @Controller('telegram')
@@ -128,7 +128,7 @@ export class TelegramBotController {
 
   // ─── Command implementations ─────────────────────────────────────────────
 
-  private async handleStart(chatId: number, from: TgUpdate['message']['from']): Promise<void> {
+  private async handleStart(chatId: number, from: TgUser | undefined): Promise<void> {
     const firstName = from?.first_name ?? 'បងប្អូន';
 
     await this.botService.sendMessage({

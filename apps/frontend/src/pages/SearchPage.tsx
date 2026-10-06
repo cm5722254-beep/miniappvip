@@ -19,7 +19,7 @@ export function SearchPage() {
 
   const { data: results, isLoading } = useQuery({
     queryKey: ['search', activeQuery],
-    queryFn: () => searchService.search(activeQuery).then((r: { data: { items: object[] } }) => r.data),
+    queryFn: () => searchService.search(activeQuery).then((r: { data: { items: object[]; total: number } }) => r.data),
     enabled: activeQuery.length >= 2,
   });
 
